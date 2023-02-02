@@ -1,6 +1,6 @@
-import SkillsIcon from '@mui/icons-material/LabelImportant'
 import LocationIcon from '@mui/icons-material/LocationCity'
 import SeekingIcon from '@mui/icons-material/OpenWith'
+import SkillsIcon from '@mui/icons-material/Star'
 import {
   Box,
   Button,
@@ -110,25 +110,45 @@ export default function Home() {
           >
             {getSiteText(siteText, SiteTexts.STATEMENT)}
           </Typography>
-          <Box sx={styles.connections} data-testId="home-resume-download">
-            <Button
-              color="secondary"
-              href="/Resume-EricLezotte.pdf"
-              size="small"
-              sx={styles.downloadButton}
-              target="resume"
-              variant="outlined"
-            >
-              Download Resume
-            </Button>
-            {!loadingLinks && (
-              <Box sx={styles.externalLinks}>
-                {links.map((link: Link) => (
-                  <LinkItem key={link._id} link={link} />
-                ))}
-              </Box>
-            )}
-          </Box>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        data-testId="home-links"
+        justifyContent="center"
+        sx={styles.section}
+      >
+        <Grid container justifyContent="center" sx={styles.section}>
+          <Grid item xs={7} sm={7} md={7} lg="auto">
+            <Box sx={styles.connections} data-testId="home-resume-download">
+              <Button
+                color="secondary"
+                href="/Resume-EricLezotte.pdf"
+                size="small"
+                sx={styles.downloadButton}
+                target="resume"
+                variant="contained"
+              >
+                Download Resume
+              </Button>
+              <Button
+                color="secondary"
+                href="/code-samples"
+                size="small"
+                sx={styles.downloadButton}
+                variant="outlined"
+              >
+                View Code Samples
+              </Button>
+              {!loadingLinks && (
+                <Box sx={styles.externalLinks}>
+                  {links.map((link: Link) => (
+                    <LinkItem key={link._id} link={link} />
+                  ))}
+                </Box>
+              )}
+            </Box>
+          </Grid>
         </Grid>
       </Grid>
       <Grid
@@ -145,7 +165,7 @@ export default function Home() {
             data-testId="home-skills-title"
           >
             <IconCircle>
-              <SkillsIcon />
+              <SkillsIcon sx={styles.icon} />
             </IconCircle>
             Skills
           </Typography>
@@ -167,7 +187,7 @@ export default function Home() {
             sx={styles.sectionTitle}
           >
             <IconCircle>
-              <SeekingIcon />
+              <SeekingIcon sx={styles.icon} />
             </IconCircle>
             Seeking
           </Typography>
@@ -191,7 +211,7 @@ export default function Home() {
             sx={styles.sectionTitle}
           >
             <IconCircle>
-              <LocationIcon />
+              <LocationIcon sx={styles.icon} />
             </IconCircle>
             Location
           </Typography>

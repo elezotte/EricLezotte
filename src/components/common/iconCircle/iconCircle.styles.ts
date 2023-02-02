@@ -5,6 +5,7 @@ export const styles: MuiSxStyles = {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
+    verticalAlign: 'text-bottom',
 
     backgroundColor: colors.sky.regular,
     borderRadius: 20,
@@ -12,7 +13,7 @@ export const styles: MuiSxStyles = {
     fontSize: font.size.ML,
     fontWeight: font.weight.BOLD,
     marginRight: 1,
-    height: 40,
-    width: 40,
+    height: 36,
+    width: 36,
   },
 }

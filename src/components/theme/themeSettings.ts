@@ -8,6 +8,7 @@ export const colors = {
   background: '#ffffff',
   sky: {
     regular: '#76d9e8',
+    dark: '#02CAE8',
   },
   gray: {
     xlight: '#ebe8e0',
@@ -24,7 +25,7 @@ export const font = {
   size: {
     SM: 12,
     MS: 14,
-    MD: 16,
+    MD: 18,
     ML: 24,
     LG: 30,
     XL: 48,

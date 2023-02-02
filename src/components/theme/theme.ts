@@ -23,14 +23,19 @@ declare module '@mui/material/Typography' {
 
 const theme = createTheme({
   palette: {
+    primary: {
+      light: colors.sky.regular,
+      main: colors.sky.regular,
+      dark: colors.sky.dark,
+    },
     secondary: {
       light: colors.gray.light,
       main: colors.gray.medium,
       dark: colors.gray.dark,
     },
     action: {
-      active: colors.sky.regular,
-      hover: colors.sky.regular,
+      active: colors.sky.dark,
+      hover: colors.gray.medium,
     },
     background: {
       default: colors.background,
@@ -41,6 +46,18 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          boxShadow:
+            '0px 2px 1px -1px rgb(0 0 0 / 12%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+
+          '&.Mui-expanded:first-of-type': {
+            marginTop: '32px',
+          },
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         root: {
@@ -68,6 +85,12 @@ const theme = createTheme({
         },
         h3: {
           fontSize: font.size.ML,
+          fontWeight: font.weight.SEMIBOLD,
+          color: colors.gray.medium,
+          marginBottom: '16px',
+        },
+        h4: {
+          fontSize: font.size.MD,
           fontWeight: font.weight.SEMIBOLD,
           color: colors.gray.medium,
           marginBottom: '16px',
