@@ -64,7 +64,7 @@ export const styles: MuiSxStyles = {
   loader: {
     marginLeft: 3,
     marginRight: 3,
-    marginTop: -6,
+    marginTop: -8,
     height: 4,
   },
   name: {
