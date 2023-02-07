@@ -86,7 +86,7 @@ export default function App() {
       <div style={styles.gameInfo}>
         <div>
           {!gameOver && <>Current Player: {player}</>}
-          {winner && <>The winner is {winner}!</>}
+          {winner && <>{winner}&apos;s win!</>}
           {gameOver && !winner && <>Nobody wins :-(</>}
         </div>
         <button onClick={handleReset} style={styles.resetBtn}>

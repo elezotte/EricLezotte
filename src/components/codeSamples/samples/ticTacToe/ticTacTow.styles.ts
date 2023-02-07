@@ -3,12 +3,13 @@ export const styles = {
     display: 'flex',
   },
   gameInfo: {
+    fontWeight: 700,
     marginLeft: 24,
   },
   resetBtn: {
     cursor: 'pointer',
-    padding: 8,
     marginTop: 32,
+    padding: 8,
   },
   row: {
     display: 'flex',
@@ -19,11 +20,11 @@ export const styles = {
     color: '#222',
     cursor: 'pointer',
     display: 'flex',
+    fontSize: 80,
+    fontWeight: 700,
     height: 100,
     justifyContent: 'center',
     margin: 4,
-    fontSize: 80,
-    fontWeight: 700,
     width: 100,
   },
   squareDisabled: {

@@ -2,13 +2,13 @@ import { Player } from './config'
 import { styles } from './ticTacTow.styles'
 
 interface SquareProps {
+  oClicks: number[]
+  xClicks: number[]
   disabled: boolean
   index: number
   onClick: (player: Player, index: number) => void
   player: Player
   winningSquares: number[]
-  xClicks: number[]
-  oClicks: number[]
 }
 
 const Square = ({
@@ -17,12 +17,11 @@ const Square = ({
   onClick,
   player,
   winningSquares,
-  xClicks,
   oClicks,
+  xClicks,
 }: SquareProps) => {
-  const handleSquareClick = () => {
-    onClick(player, index)
-  }
+  let squarePlayer
+
   const winningStyles = winningSquares.includes(index)
     ? styles.winningSquare
     : {}
@@ -38,12 +37,14 @@ const Square = ({
     if (disabled) {
       return
     }
-    handleSquareClick()
+    onClick(player, index)
   }
 
-  let squarePlayer
-  squarePlayer = xClicks.includes(index) ? 'X' : squarePlayer
-  squarePlayer = oClicks.includes(index) ? 'O' : squarePlayer
+  if (xClicks.includes(index)) {
+    squarePlayer = Player.X
+  } else if (oClicks.includes(index)) {
+    squarePlayer = Player.O
+  }
 
   return (
     <div onClick={handleClick} style={squareStyles}>
