@@ -16,6 +16,7 @@ import {
 import IconCircle from 'components/common/iconCircle/IconCircle'
 import { fetcher } from 'lib/fauna'
 import { Link, SiteTexts, Skill } from 'lib/interfaces'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { getSiteText, sortByRank } from 'src/utils'
@@ -69,6 +70,9 @@ export default function Home() {
 
   return (
     <Grid justifyContent="center" container>
+      <Head>
+        <title>EricLezotte.com</title>
+      </Head>
       <Grid container justifyContent="center" sx={styles.section}>
         <Grid item sx={styles.imageContainer} xs={7} sm={7} md={7} lg="auto">
           <Image

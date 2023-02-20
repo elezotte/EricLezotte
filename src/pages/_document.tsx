@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta
+          name="description"
+          content="I'm a Senior Front-End Developer with training in fine arts and engineering. I have a passion for creating pixel-perfect experiences and unique visuals."
+        />
+        <link rel="canonical" href="https://ericlezotte.com" />
         <link rel="icon" type="image/png" href="./favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
