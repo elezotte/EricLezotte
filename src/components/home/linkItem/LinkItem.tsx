@@ -2,22 +2,22 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { Box, Link, Tooltip } from '@mui/material'
-import { Link as LinkInterface, LinkIconKeys } from 'lib/interfaces'
+import { LinkIconKeys, Link as LinkInterface } from 'lib/interfaces'
 import { styles } from './linkItem.styles'
 
-interface LinkItemProps {
+interface Props {
   link: LinkInterface
 }
 
-const Icons = {
+const Icons: { [key: string]: any } = {
   [LinkIconKeys.GH]: <GitHubIcon sx={styles.icon} />,
   [LinkIconKeys.IG]: <InstagramIcon sx={styles.icon} />,
   [LinkIconKeys.LI]: <LinkedInIcon sx={styles.icon} />,
 }
 
-const LinkItem: React.FC<LinkItemProps> = ({ link }: LinkItemProps) => {
+const LinkItem: React.FC<Props> = ({ link }: Props) => {
   return (
-    <Box sx={styles.linkContainer} data-testId={`home-link-${link.iconKey}`}>
+    <Box sx={styles.linkContainer} data-testid={`home-link-${link.iconKey}`}>
       <Tooltip title={link.label}>
         <Link
           sx={styles.link}

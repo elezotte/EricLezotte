@@ -2,7 +2,7 @@ import { Box } from '@mui/material'
 import React from 'react'
 import { styles } from './nav.styles'
 
-import IconCircle from 'components/common/iconCircle/IconCircle'
+import IconCircle from 'src/components/common/iconCircle/IconCircle'
 
 export default function Nav({ children }: { children: React.ReactNode }) {
   return (

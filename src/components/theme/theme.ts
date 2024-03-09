@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles'
-
-import { colors, font } from './themeSettings'
+'use client';
+import { createTheme } from '@mui/material/styles';
+import { colors, font } from './themeSettings';
 
 // Add span as a valid variant to Typography component
 declare module '@mui/material/styles' {

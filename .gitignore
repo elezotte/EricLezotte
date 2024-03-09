@@ -19,6 +19,8 @@
 .DS_Store
 *.pem
 schema.gql
+.vscode
+pages/api/task.ts
 
 # debug
 npm-debug.log*
@@ -27,7 +29,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env
+.env*
 
 # vercel
 .vercel

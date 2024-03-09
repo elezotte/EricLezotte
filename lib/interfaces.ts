@@ -12,22 +12,19 @@ export enum SiteTexts {
 }
 
 export interface Link {
-  _id: string
-  iconKey: LinkIconKeys
+  iconKey: string
   label: string
   url: string
-  rank?: number
+  rank?: string
 }
 
 export interface Skill {
-  _id: string
   label: string
-  rank?: number
+  rank?: string
   yearsUsed?: number
 }
 
 export interface SiteText {
-  _id: string
-  key: SiteTexts
+  key: string
   value: string
 }

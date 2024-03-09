@@ -1,4 +1,4 @@
-import { colors, font, MuiSxStyles } from 'components/theme/themeSettings'
+import { colors, font, MuiSxStyles } from 'src/components/theme/themeSettings'
 
 export const styles: MuiSxStyles = {
   iconCircle: {
