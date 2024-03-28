@@ -21,13 +21,23 @@ export default async function Actions() {
           <Box sx={styles.connections} data-testid="home-resume-download">
             <Button
               color="secondary"
-              href="/Resume-EricLezotte.pdf"
+              href="/resume/Resume-EricLezotte.pdf"
               size="small"
               sx={styles.downloadButton}
               target="resume"
               variant="contained"
             >
-              Download Resume
+              Get PDF Resume
+            </Button>
+            <Button
+              color="secondary"
+              href="/resume/Resume-EricLezotte.rtf"
+              size="small"
+              sx={styles.downloadButton}
+              target="resume"
+              variant="outlined"
+            >
+              Get Text Resume
             </Button>
             {/* <Button
               color="secondary"
