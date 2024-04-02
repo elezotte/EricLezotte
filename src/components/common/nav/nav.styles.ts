@@ -5,7 +5,7 @@ export const styles: MuiSxStyles = {
     display: 'flex',
     alignItems: 'center',
 
-    color: colors.gray.dark,
+    color: colors.gray.medium,
     fontFamily: font.family,
     fontSize: font.size.ML,
     marginTop: 2,
@@ -16,7 +16,6 @@ export const styles: MuiSxStyles = {
   nameFirst: {
     display: 'inline',
     fontWeight: 'bold',
-    marginRight: 0.5,
     fontSize: font.size.ML,
   },
 }

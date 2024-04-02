@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <Grid justifyContent="center" container>
       <Head>
-        <title>EricLezotte.com</title>
+        <title><span>E</span>ricLezotte.com</title>
       </Head>
       <Grid container justifyContent="center" sx={styles.section}>
         <ProfileImage/>

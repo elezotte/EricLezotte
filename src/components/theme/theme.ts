@@ -74,8 +74,12 @@ const theme = createTheme({
         h1: {
           fontSize: font.size.XL,
           fontWeight: font.weight.BOLD,
-          color: colors.sky.regular,
+          color: colors.gray.mediumDark,
           marginBottom: '24px',
+
+          span: {
+            color: colors.sky.dark,
+          }
         },
         h2: {
           fontSize: font.size.LG,
