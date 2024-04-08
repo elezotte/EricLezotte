@@ -29,6 +29,7 @@ export const styles: MuiSxStyles = {
   },
   section: {
     marginBottom: 6,
+    maxWidth: 2400,
   },
   sectionTitle: {
     marginBottom: 2,
