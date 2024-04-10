@@ -20,7 +20,9 @@
 *.pem
 schema.gql
 .vscode
+app/test
 pages/api/task.ts
+src/components/test
 
 # debug
 npm-debug.log*

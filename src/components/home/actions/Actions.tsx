@@ -39,15 +39,6 @@ export default async function Actions() {
             >
               Get Text Resume
             </Button>
-            {/* <Button
-              color="secondary"
-              href="/code-samples"
-              size="small"
-              sx={styles.downloadButton}
-              variant="outlined"
-            >
-              View Code Samples
-            </Button> */}
             <Box sx={styles.externalLinks}>
               {links.map((link: Link) => (
                 <LinkItem key={link.iconKey} link={link} />
