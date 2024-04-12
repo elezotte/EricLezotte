@@ -1,4 +1,5 @@
-import { Grid, Typography } from '@mui/material'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 import { SiteText, SiteTexts } from 'lib/interfaces'
 import { getSiteText } from 'lib/utils'

@@ -1,7 +1,9 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import { Box, Link, Tooltip } from '@mui/material'
+import Box from '@mui/material/Box'
+import Link from '@mui/material/Link'
+import Tooltip from '@mui/material/Tooltip'
 import { LinkIconKeys, Link as LinkInterface } from 'lib/interfaces'
 import { styles } from './linkItem.styles'
 

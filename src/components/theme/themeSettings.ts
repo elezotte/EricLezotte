@@ -4,6 +4,10 @@ export interface MuiSxStyles {
   [key: string]: SxProps
 }
 
+export interface ReactStyles {
+  [key: string]: React.CSSProperties,
+}
+
 export const colors = {
   background: '#ffffff',
   sky: {

@@ -1,5 +1,7 @@
 import SeekingIcon from '@mui/icons-material/OpenWith'
-import { Divider, Grid, Typography } from '@mui/material'
+import Divider from '@mui/material/Divider'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 import IconCircle from 'components/common/iconCircle/IconCircle'
 
 import { SiteText, SiteTexts } from 'lib/interfaces'
