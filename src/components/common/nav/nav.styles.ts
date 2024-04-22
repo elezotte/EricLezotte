@@ -1,4 +1,4 @@
-import { colors, font, MuiSxStyles } from 'src/components/theme/themeSettings'
+import { colors, font, MuiSxStyles, ReactStyles } from 'src/components/theme/themeSettings'
 
 export const styles: MuiSxStyles = {
   nameContainer: {
@@ -18,4 +18,14 @@ export const styles: MuiSxStyles = {
     fontWeight: 'bold',
     fontSize: font.size.ML,
   },
+  homeLink: {
+    color: 'inherit',
+    textDecoration: 'none'
+  }
+}
+
+export const reactStyles: ReactStyles = {
+  homeLink: {
+    textDecoration: 'none'
+  }
 }
