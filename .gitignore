@@ -21,6 +21,7 @@
 schema.gql
 .vscode
 pages/api/task.ts
+app/temp/*
 
 # debug
 npm-debug.log*
