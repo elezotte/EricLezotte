@@ -2,6 +2,7 @@ export enum LinkIconKeys {
   GH = 'gh',
   IG = 'ig',
   LI = 'li',
+  CA = 'ca',
 }
 
 export enum SiteTexts {
