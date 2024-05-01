@@ -11,9 +11,6 @@ export default function Nav({ children }: Readonly<{ children: React.ReactNode }
       <Link style={reactStyles.homeLink} href='/'>
         <Box sx={styles.nameContainer}>
             <IconCircle>E</IconCircle>
-            <Box>
-               <Box sx={styles.nameFirst}>Eric</Box> Lezotte
-            </Box>
         </Box>
       </Link>
       {children}

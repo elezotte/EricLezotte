@@ -1,4 +1,4 @@
-import SeekingIcon from '@mui/icons-material/OpenWith'
+import ObjectiveIcon from '@mui/icons-material/OpenWith'
 import Divider from '@mui/material/Divider'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
@@ -12,28 +12,28 @@ interface Props {
   siteText: SiteText[]
 }
 
-export default async function Seeking({ siteText }: Props) {
+export default async function Objective({ siteText }: Props) {
   return (
     <Grid
       container
-      data-testid="home-seeking"
+      data-testid="home-objective"
       justifyContent="center"
       spacing={2}
       sx={homeStyles.section}
     >
       <Grid item xs={7}>
         <Typography
-          data-testid="home-seeking-title"
+          data-testid="home-objective-title"
           variant="h3"
           sx={homeStyles.sectionTitle}
         >
           <IconCircle>
-            <SeekingIcon sx={homeStyles.icon} />
+            <ObjectiveIcon sx={homeStyles.icon} />
           </IconCircle>
-          Seeking
+          Objective
         </Typography>
         <Divider sx={homeStyles.divider} />
-        <Typography data-testid="home-seeking-text" variant="body1">
+        <Typography data-testid="home-objective-text" variant="body1">
           {getSiteText(siteText, SiteTexts.SEEKING)}
         </Typography>
       </Grid>

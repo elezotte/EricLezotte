@@ -11,8 +11,8 @@ export interface ReactStyles {
 export const colors = {
   background: '#ffffff',
   sky: {
-    regular: '#76d9e8',
-    dark: '#02CAE8',
+    regular: '#71d3e3',
+    dark: '#6BC7D6',
   },
   gray: {
     xlight: '#ebe8e0',

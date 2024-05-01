@@ -20,7 +20,7 @@ export default async function Home({ siteText }: Props) {
         {getSiteText(siteText, SiteTexts.PROFESSION)}
       </Typography>
       <Typography data-testid="home-name" variant="h1" sx={styles.name}>
-        <span>E</span>ric Lezotte
+        <span>E</span>ric <span>L</span>ezotte
       </Typography>
       <Typography
         data-testid="home-statement"

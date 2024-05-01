@@ -9,7 +9,7 @@ import Description from './description/Description'
 import { styles } from './home.styles'
 import Location from './location/Location'
 import ProfileImage from './profileImage/ProfileImage'
-import Seeking from './seeking/Seeking'
+import Objective from 'components/home/objective/Objective'
 import Skills from './skills/Skills'
 
 export default async function Home() {
@@ -26,7 +26,7 @@ export default async function Home() {
       </Grid>
       <Actions />
       <Skills />
-      <Seeking siteText={siteText} />
+      <Objective siteText={siteText} />
       <Location siteText={siteText} />
     </Grid>
   )
