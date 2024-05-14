@@ -34,7 +34,7 @@ export default async function Objective({ siteText }: Props) {
         </Typography>
         <Divider sx={homeStyles.divider} />
         <Typography data-testid="home-objective-text" variant="body1">
-          {getSiteText(siteText, SiteTexts.SEEKING)}
+          {getSiteText(siteText, SiteTexts.OBJECTIVE)}
         </Typography>
       </Grid>
     </Grid>

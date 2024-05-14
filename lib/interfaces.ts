@@ -8,7 +8,7 @@ export enum LinkIconKeys {
 export enum SiteTexts {
   LOCATION = 'location',
   PROFESSION = 'profession',
-  SEEKING = 'seeking',
+  OBJECTIVE = 'objective',
   STATEMENT = 'statement',
 }
 
