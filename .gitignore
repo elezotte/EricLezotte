@@ -1,4 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -20,8 +19,11 @@
 *.pem
 schema.gql
 .vscode
-pages/api/task.ts
 app/temp/*
+
+# api
+pages/api/task.ts
+pages/api/hi.ts
 
 # debug
 npm-debug.log*
@@ -29,7 +31,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
+# env files
 .env*
 
 # IDE/editor
